@@ -6,3 +6,77 @@
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #230E3D;
+    color: white;
+}
+
+/* navbar section */
+
+.btn{
+    padding: 12px 40px 16px;
+    background: linear-gradient(45deg,  #F7E93F, #95066a, #9118e8);
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-main{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-top: 30px;
+    margin-bottom: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+nav> span{
+    margin-left: 60px;
+    display: none;
+}
+
+.nav-logo-span{
+    background: linear-gradient(45deg, #FB09B4, #9100f8, #F7E93F 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.menu{
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    align-items: center;
+}
+
+nav .menu a{
+    text-decoration: none;
+    color: white;
+}
+/* responsive */
+@media screen and (max-width:576px){
+    .btn{
+        display: none;
+    }
+    .nav-menu{
+        display: none;
+    }
+    nav> span{
+    margin-left: auto;
+    display: inline;
+}
+    
+    
+} 
