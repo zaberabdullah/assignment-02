@@ -13,7 +13,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #230E3D;
+    background-color: #1A0B2E;
     color: white;
 }
 
@@ -83,8 +83,7 @@ body{
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
-    padding-top: 30px;
-    margin-bottom: 36px;
+    padding-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -126,6 +125,7 @@ nav .menu a{
     background-position: center 70px, center 10px;
     background-repeat: no-repeat, no-repeat;
     background-size:360px 360px, 100% 100%;
+  
 }
 
     
@@ -151,31 +151,72 @@ nav .menu a{
     font-weight: 900;
     padding-top: 40px;
 }
+/* banner section */
 
+.banner-content{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    text-align: center;
 
+}
+
+.banner-heading{
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.banner-paragraph{
+    font-size: 1.25rem;
+    line-height: 2rem;
+    color: rgb(194, 184, 184);
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card-paragraph{
+    color: #00FF88;
+    padding: 10px 0;
+}
 
 
 /* responsive */
 @media screen and (max-width:576px){
     .btn{
         display: none;
+        align-items: right;
     }
     .nav-menu{
         display: none;
+    
     }
     nav> span{
     display: inline;
 }
 
+.nav-main{
+    padding-left: 20px;
+}
+
 .hero-section{
-    margin: 0 auto;
-    padding-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url(./assets/hero-circle.png), url(./assets/hero-bg.png); 
+    background-position: center 140px, center;
+    background-repeat: no-repeat, no-repeat;
     background-size:200px 200px, 100% 100%;
+  
 }
 .image-container{
+    width: 100%;
     display: flex;
     justify-content:center;
     align-items: center;
@@ -185,9 +226,58 @@ nav .menu a{
 }
 .image-container img{
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    margin-left: 25px;
 }
+
+.new-btn button{
+    margin-top: -240px;
+    margin-right: -150px;
+    font-size: 1rem;
     
-} 
+}
+.hero-text{
+    font-size: 2.5rem;
+}
+.hero-paragraph{
+    text-align: center;
+    padding: 0 20px;
+    padding-top: 10px;
+}
+
+section .btn{
+    display: inline;
+    padding: 12px;
+}
+
+.btn-two{
+    padding: 10px;
+}
+
+.banner-content{
+    width: 100%;
+    max-width: 1600px;
+    padding: 20px 20px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.banner-heading{
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.banner-paragraph{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 50px;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+}
