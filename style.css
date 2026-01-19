@@ -289,10 +289,8 @@ nav .menu a{
 .episode-card{
     background-color: #250D44;
     border-radius: 20px;
-    padding: 20px;
-    width: 350px;
+    width: 330px;
     text-align: left;
-    overflow: hidden;
     border: 1px solid #2d1b4d;
     transition: transform 0.3s ease;
 }
@@ -305,7 +303,7 @@ nav .menu a{
 
 .video-container{
     position: relative;
-    padding-bottom: 56.25%;
+    padding-bottom: 60%;
     height: 0;
 }
 
@@ -342,7 +340,68 @@ nav .menu a{
     gap: 5px;
 
 }
+/* host section */
 
+.host-h1{
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.host-section{
+    padding: 80px 20px;
+    background-color: #1A0B2E;
+    text-align: center;
+    color: white;
+}
+
+.host-container{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(53, 17, 101, 0.4);
+    padding: 50px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.host-content{
+    text-align: left;
+}
+
+.host-name{
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.host-content p{
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: rgb(200, 183, 183);
+}
+
+.social-links{
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a img{
+  width: 23px;
+  height: 23px;
+  transition: 0.3s;
+  opacity: 0.8;
+  
+}
+
+.social-links a img:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
 /* responsive */
 @media screen and (max-width:576px){
     .btn{
@@ -466,9 +525,41 @@ section .btn{
     margin-bottom: 15px;
 }
 .podcast-section{
-    padding: 30px 20px;
+    padding: 30px 10px;
     background-color: #1A0B2E;
     text-align: center;
     color: white;
+}
+
+.host-section{
+    padding: 30px 20px;
+}
+.host-section h1{
+    font-size: 1.8rem;
+}
+.host-container{
+    width: 100%;
+    padding: 30px 20px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.host-name{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+.host-content p{
+    text-align: center;
+}
+
+.social-links a img{
+  width: 18px;
+  height: 18px;
+}
+
+.social-links{
+    justify-content: center;
 }
 }
