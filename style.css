@@ -143,7 +143,7 @@ nav .menu a{
 }
 
 .image-container img{
-    padding-bottom: 100px;
+    padding-bottom: 88px;
 }
 
 .hero-text{
@@ -348,7 +348,8 @@ nav .menu a{
     margin-bottom: 20px;
 }
 .host-section{
-    padding: 80px 20px;
+    padding: 30px 20px;
+    padding-bottom: 50px;
     background-color: #1A0B2E;
     text-align: center;
     color: white;
@@ -402,6 +403,53 @@ nav .menu a{
     transform: scale(1.1);
     opacity: 1;
 }
+
+/* Footer Section */
+
+.footer-section{
+    background-color: #230E3D;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    background-image: url(./assets/footer-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.footer-logo{
+
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-link{
+    display: flex;
+    justify-content: center;
+    color: rgb(195, 184, 184);
+    align-items: center;
+    gap: 40px;
+    margin:30px auto 50px;
+    width: fit-content;
+    padding: 0;
+}
+
+.footer-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.copyright-content{
+    color: rgb(184, 171, 171);
+}
+
+
 /* responsive */
 @media screen and (max-width:576px){
     .btn{
@@ -440,15 +488,17 @@ nav .menu a{
 
 }
 .image-container img{
-    width: 100%;
+    width: 19%;
     display: block;
-    margin-left: 25px;
+    margin-left: 151px;
+    margin-right: 27px;
+    margin-bottom: 20px;
 }
 
 .new-btn button{
-    margin-top: -240px;
-    margin-right: -150px;
-    font-size: 1rem;
+    margin-top: -214px;
+    margin-right: -20px;
+    font-size: .8rem;
     
 }
 .hero-text{
@@ -562,4 +612,55 @@ section .btn{
 .social-links{
     justify-content: center;
 }
+
+.footer-link{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+    padding-top: 20px;
+}
+
+.footer-item{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.footer-item img{
+    width: 18px;
+    height: auto;
+}
+
+
+.footer-section{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background-size:auto 170px;
+    background-position: contain;
+    background-repeat: no-repeat;
+}
+
+.footer-logo{
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-top: 30px;
+}
+
+
+.copyright-content{
+    font-size: 1rem;
+    padding-top: 40px;   
+
+}
+
+
 }
