@@ -186,6 +186,84 @@ nav .menu a{
     padding: 10px 0;
 }
 
+.section-grid h1{
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+}
+
+.section-grid{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    background-color: #230E3D;
+}
+   
+.section-grid h1{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.grid-container{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "headphone  mobile    mobile    mobile"
+    "headphone  community community community"
+    "exclusive  exclusive exclusive resource";
+}
+.headphone-layout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.headphone-layout{
+    grid-area: headphone;
+}
+
+.mobile-layout{
+    grid-area: mobile;
+}
+
+.community-layout{
+    grid-area: community;
+}
+
+.exclusive-layout{
+    grid-area: exclusive;
+}
+
+.resource-layout{
+    grid-area: resource;
+}
+
+.card{
+    background-color: rgba(53, 17, 101, 0.4);
+    border: 1px solid #2d1b4d;
+    width: 100%;
+    padding: 30px;
+    border-radius: 50px;
+    color: white;
+
+}
+.card img{
+    width: 40px;
+    margin-bottom: 12px;
+}
+.card h2{
+    font-size: 1.5rem;
+    margin-bottom: 10px;}
+
+.card p{
+    color: rgb(174, 171, 171);
+    line-height: 1.5;
+}
+
 
 /* responsive */
 @media screen and (max-width:576px){
@@ -280,4 +358,28 @@ section .btn{
     gap: 15px;
 }
 
+.grid-container{
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "headphone" 
+    "mobile"
+    "community"
+    "exclusive" 
+    "resource";
+    gap: 15px; 
+}
+.section-grid{
+    margin-top: 15px;
+    padding: 10px 15px;
+}
+
+.section-grid h1{
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.card{
+    border-radius: 20px;
+}
 }
