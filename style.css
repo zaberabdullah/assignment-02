@@ -460,4 +460,15 @@ section .btn{
 .card{
     border-radius: 20px;
 }
+
+.podcast-section h1{
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+.podcast-section{
+    padding: 30px 20px;
+    background-color: #1A0B2E;
+    text-align: center;
+    color: white;
+}
 }
